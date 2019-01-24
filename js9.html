@@ -1,0 +1,96 @@
+function er2(){ 
+var canvas = document.getElementById('example'); 
+var ctx = canvas.getContext('2d'); 
+drawpoint(); 
+ctx.beginPath(); 
+ctx.moveTo(240, 0); 
+ctx.lineTo(240, 320); 
+ctx.moveTo(0, 160); 
+ctx.lineTo(480, 160); 
+ctx.moveTo(0, 145); 
+ctx.lineTo(480,145); 
+ctx.moveTo(0, 180); 
+ctx.lineTo(480, 180); 
+ctx.stroke(); 
+x=Number(document.getElementById("x_znach").value); 
+y=Number(document.getElementById("y_znach").value); 
+if (y>=-2 && y<=1.5) { 
+ alert( 'Точка в области' ); 
+} else { 
+ alert( 'Точка не в области' ); 
+} 
+} 
+function er3(){ 
+var canvas = document.getElementById('example'); 
+var ctx = canvas.getContext('2d'); 
+drawpoint(); 
+ctx.beginPath(); 
+ctx.moveTo(240, 0); 
+ctx.lineTo(240, 320); 
+ctx.moveTo(0, 160); 
+ctx.lineTo(480, 160); 
+ctx.moveTo(250, 150); 
+ctx.lineTo(250,40); 
+ctx.moveTo(260,150); 
+ctx.lineTo(260,40 ); 
+ctx.moveTo(250,40); 
+ctx.lineTo(260,40 ); 
+ctx.stroke(); 
+x=Number(document.getElementById("x_znach").value); 
+y=Number(document.getElementById("y_znach").value); 
+if (x<= 2 && x>= 1 && y<= 4 && y>= 1 ) { 
+ alert( 'Точка в области' ); 
+} else { 
+ alert( 'Точка не в области' ); 
+} 
+} 
+function er4(){ 
+var canvas = document.getElementById('example'); 
+var ctx = canvas.getContext('2d'); 
+drawpoint(); 
+ctx.beginPath(); 
+ctx.moveTo(240, 0); 
+ctx.lineTo(240, 320); 
+ctx.moveTo(0, 160); 
+ctx.lineTo(480, 160); 
+ctx.moveTo(250, 140); 
+ctx.lineTo(250,40); 
+ctx.moveTo(250,140); 
+ctx.lineTo(480,140 ); 
+ctx.moveTo(250,40); 
+ctx.lineTo(480,40 ); 
+ctx.stroke(); 
+x=Number(document.getElementById("x_znach").value); 
+y=Number(document.getElementById("y_znach").value); 
+if (x >= 1 && y>= 2 && y>=4) { 
+ alert( 'Точка в области' ); 
+} else { 
+ alert( 'Точка не в области' ); 
+} 
+} 
+function er5(){ 
+var canvas = document.getElementById('example'); 
+var ctx = canvas.getContext('2d'); 
+drawpoint(); 
+ctx.beginPath(); 
+ctx.moveTo(240, 0); 
+ctx.lineTo(240, 320); 
+ctx.moveTo(0, 160); 
+ctx.lineTo(480, 160); 
+ctx.moveTo(260, 160); 
+ctx.lineTo(260,0); 
+ctx.moveTo(260,160); 
+ctx.lineTo(480,160 ); 
+ctx.moveTo(250,170); 
+ctx.lineTo(250,320 ); 
+ctx.moveTo(250,170); 
+ctx.lineTo(480,170 ); 
+ctx.stroke(); 
+x=Number(document.getElementById("x_znach").value); 
+y=Number(document.getElementById("y_znach").value); 
+if (x >= 2 && y>=0 || x <=1 && y<=-1) { 
+ alert( 'Точка в области' ); 
+} else { 
+ alert( 'Точка не в области' ); 
+} 
+}
