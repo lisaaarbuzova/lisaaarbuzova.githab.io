@@ -1,0 +1,23 @@
+<html> 
+<head> 
+<link rel="stylesheet" href="style2.css"><script> 
+function func1() { 
+n = Number(document.getElementById("n_f1_znach").value); 
+document.getElementById("otvet1").innerHTML = ""; 
+var i = n; 
+var S=0; 
+while (i <= 2*n) { 
+S=S+i*i; 
+document.getElementById("otvet1").innerHTML = document.getElementById("otvet1").innerHTML + i*i +" "+ S + "<br>"; 
+i++; 
+ } 
+} 
+</script> 
+</head> 
+<body> 
+n= <input type="text" value="1" id="n_f1_znach"> 
+<n href="#" onclick="func1()" class="action-button shadow animate blue">жми</n> 
+<div id="otvet1"></div> 
+<br> 
+</body> 
+</html>
